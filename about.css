@@ -1,0 +1,89 @@
+body {
+background-color: teal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: calibri;
+    justify-items: center;
+  }
+  
+  nav {
+    padding-right: 0.5rem;
+    width: 100%;
+    height: 5em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+            position: sticky;
+           top: 0vw;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    float: left;
+    padding: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color:rgb(225, 228, 49);
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-left: 2px solid blue;
+  }
+  .about{
+      text-align:justify;
+      padding-top:1.5rem;
+      scroll-behavior: smooth;
+      
+      
+  }
+  .about div h2{
+      padding: 50px;
+      text-align: center;
+  }
+  .about div p{
+      color:whitesmoke;
+      padding:0px 100px;
+      line-height: 1.5;
+      word-spacing: 1.5px;
+      letter-spacing: 0.5px;
+  }
+  .about .img{
+    margin: 0px auto;
+    
+    text-align: center;
+  }
+  .about .img img{
+    border:5px solid white ;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 200px;
+    border-top-color: violet;
+    border-bottom-color:violet;
+    scroll-behavior: smooth;
+    width: 200px;
+    height: 200px;
+    
+  }
+  .about .img img:hover{
+    transform: scale(1.01,1.01);
+
+  }

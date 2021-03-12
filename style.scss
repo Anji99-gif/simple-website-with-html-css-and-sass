@@ -1,0 +1,174 @@
+@import "colors";
+$myFont: calibri;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+    background-color:lightskyblue;
+align-items: center;
+font-family: $myFont;
+justify-items: center;
+}
+
+nav{
+   padding-right: 0.5rem;
+   //margin: 20px;
+   width: 100%;
+   height: 5em;
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   flex-flow: row;
+   
+   
+   
+    ul{
+        list-style-type: none;
+       
+       
+    }
+    li{
+     float:left;
+     padding: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color:darkblue;
+        text-transform: uppercase;
+        font-family: $myFont;
+        padding: 10px;
+       
+       
+    }
+}
+nav ul li a:hover{
+    color:rgb(255, 255, 255);
+    border-left: 2px solid blue;
+}
+.hero h1{
+   width: 100%;
+   height: 6rem;
+   text-align: center;
+   color: darkblue;
+   
+}
+/*.hero h1:hover{
+
+    background-image: linear-gradient(red,white);
+    
+ }
+*/
+.hero .btn{
+     
+   // box-shadow: 2px 2px 5px white;
+    background-color:rgb(255, 99, 71);
+    padding: 0.8em;
+    color: white;
+    
+}
+.hero{
+    display: flex;
+    flex-flow: column;
+    padding-top: 10em;
+    align-items: center;
+    
+
+}
+.foot ul{
+    display: flex;
+   flex-wrap: wrap;
+   //align-items: center;
+   //align-content: center;
+   justify-content:center;
+   
+   list-style-type: none;
+
+}
+.foot  ul li{
+    padding: 4em;
+}
+.log{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    padding: 0rem 3.5rem;
+    font-size: 14px;
+   
+}
+.log div a{
+    padding: 0.3em;
+    border: 0px solid white;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+}
+.log div{
+    padding-right: 0em;
+    
+}
+@mixin circles($pos){
+    border:0px solid blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px 500px 30px 10px;
+    position:absolute;
+    top: $pos;
+    left: $pos;
+    background-color: rgba(156, 252, 255, 0.1);
+}
+.circle{
+    @include circles(200px);
+}
+.circle1:hover{
+    transform: rotate(180deg) ;
+    position: absolute;
+    top: 0px;
+
+}
+.circle1{
+    @include circles(500px);
+}
+.circle2{
+    border:0px solid rgb(37, 37, 59);
+    width: 50px;
+    height: 80px;
+    border-radius:  0px 200px;
+    position:absolute;
+    top: 200px;
+    left: 10px;
+    background-color: rgba(89, 112, 112, 0.1);
+
+}
+.circle3{
+    border:0px solid blue;
+    width: 50px;
+    height: 80px;
+    border-radius:  0px 200px;
+    position:absolute;
+    top: 200px;
+    left: 800px;
+    background-color: rgba(89, 112, 112, 0.1);
+
+}
+section{
+    color: rgb(223, 219, 14);
+    text-align: center;
+    padding: 5px 0px;
+}
+@mixin scale{
+    transform: scale(2,2);
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.fa:hover{
+    @include scale;
+    color: white;
+}
+.svg img{
+    position: absolute;
+    top: 13%;
+    right: 40%;
+    z-index: -1;
+    margin: 0px auto;
+}
